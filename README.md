@@ -1,6 +1,6 @@
 # TinyTeX
 
-## Forked from Xi Yihui's repo
+## Forked from Xie Yihui's repo
 
 Just added some depedencies to compile my thesis. Run this to install:
 
