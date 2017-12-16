@@ -26,6 +26,7 @@ hyperref
 ifluatex
 ifxetex
 latexmk
+listings
 lm
 luaotfload
 makeindex
