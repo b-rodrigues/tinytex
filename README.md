@@ -1,5 +1,14 @@
 # TinyTeX
 
+## Forked from Xi Yihui's repo
+
+Just added some depedencies to compile my thesis. Run this to install:
+
+
+    wget -qO- \
+      "https://github.com/b-rodrigues/tinytex/raw/master/tools/install-unx.sh" | sh
+
+
 [![Build Status](https://travis-ci.org/yihui/tinytex.svg)](https://travis-ci.org/yihui/tinytex)
 
 The installation and maintenance of LaTeX have bothered me for several years. Yes, there are MiKTeX, MacTeX, and TeX Live, but the common problems are:
