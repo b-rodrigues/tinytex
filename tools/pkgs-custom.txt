@@ -50,3 +50,4 @@ siunitx
 multirow 
 colortbl 
 tlnet
+latexmk
