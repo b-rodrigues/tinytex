@@ -9,6 +9,32 @@ Just added some depedencies to compile my thesis. Run this to install:
       "https://github.com/b-rodrigues/tinytex/raw/master/tools/install-unx.sh" | sh
 
 
+### Maintenance (taken from https://yihui.name/tinytex/)
+
+If you compile a LaTeX document and run into an error message like this:
+
+    ! LaTeX Error: File `framed.sty' not found.
+
+    Type X to quit or <RETURN> to proceed,
+    or enter new name. (Default extension: sty)
+
+It basically indicates a missing LaTeX package. Do not panic. Open a command window, and use the command tlmgr search --     global --file followed by the filename,5 e.g.,
+
+    $ tlmgr search --global --file "/framed.sty"
+    framed:
+            texmf-dist/tex/latex/framed/framed.sty
+    ...
+
+Find the package that contains the file with the exact name in the error log above. In this case, the missing package is framed (not mdframed or other packages), and we can install a package via tlmgr install, e.g.,
+
+    tlmgr install framed
+
+If you still see error messages that you don’t understand, you may update everything:
+
+    tlmgr update --self --all
+    tlmgr path add
+    fmtutil-sys --all
+
 ## Original readme below
 
 [![Build Status](https://travis-ci.org/yihui/tinytex.svg)](https://travis-ci.org/yihui/tinytex)
