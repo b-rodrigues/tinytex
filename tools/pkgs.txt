@@ -1,3 +1,4 @@
+adjustbox
 amscls
 amsfonts
 amsmath
